@@ -4,24 +4,50 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<head>
+<style>
+table {
+     width:100%
+}
+table, th, td {
+    border: 2px solid #cecece;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.selected {
+       background-color: #f36f48;
+       font-weight: bold;
+       color: white;
+}
+tr:nth-child(even){background-color: #f2f2f2}
+</style>
+
+</head>
+
 <body>
 
 <!-- Navigation Bar -->
 <nav class="w3-bar w3-black">
   <a href="#home" class="w3-button w3-bar-item">Home</a>
-  <a href="https://www.github.com/shubhamgoswami" class="w3-button w3-bar-item">Git Profile</a>
+  <a href="#My Coding Schedule" class="w3-button w3-bar-item">Coding Schedule</a>
   <a href="https://www.linkedin.com/in/goswamishubham" class="w3-button w3-bar-item">Resume</a>
-  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+  <a href="#conatct" class="w3-button w3-bar-item">Conatct</a>
 </nav>
 
 <!-- Photo ID -->
 <div class="w3-container w3-center w3-large">
+  <h2></h2>
   <img src="https://instagram.fagr1-1.fna.fbcdn.net/t51.2885-19/s150x150/19984760_871077233048037_4159616955059273728_a.jpg" class="w3-circle" alt="Photo ID" >
 </div>
 <!-- Photo ID end -->
 
 <section class="w3-container w3-center" style="max-width:2000px">
+   <h2></h2>
   <h2 class="w3-wide">About Me</h2>
 </section>
 
@@ -32,12 +58,74 @@ My name is Shubham Goswami. I am a second year undergraduate student at
      I am pursuing a bachelors degree in Computer Science and Engineering (B. Tech).
 </section>
 
+<section class="w3-container w3-center" style="max-width:2100px">
+  <h2></h2>
+  <h2 class="w3-wide">My Coding Schedule</h2>
+</section>
+
+<div class="w3-center" style="overflow-x:auto;">
+  <table>
+    <tr>
+      <th>Day</th>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+    </tr>
+    <tr>
+      <td>8-8:30</td>
+      <td class="selected">Learn</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>9-10</td>
+      <td></td>
+      <td class="selected">Practice</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1-1:30</td>
+      <td></td>
+      <td></td>
+      <td class="selected">Play</td>
+      <td></td>
+      <td></td>
+    </tr>
+<tr>
+      <td>3:45-5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="selected">Code</td>
+      <td></td>
+    </tr>
+<tr>
+      <td>6-6:15</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="selected">Discuss</td>
+    </tr>
+  </table>
+</div>
+
+
+
 <!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-center w3-black w3-xlarge">
+<footer class="w3-container w3-bottom w3-padding-32 w3-center w3-black w3-xlarge">
   <a href="https://www.facebook.com/sgshubham98"><i class="fa fa-facebook-official"></i></a>
   <a href="https://www.instagram.com/shubhamgoswami_"><i class="fa fa-instagram"></i></a>
   <a href="https://www.twitter.com/shubhamgoswami_"><i class="fa fa-twitter"></i></a>
   <a href="https://www.linkedin.com/in/goswamishubham"><i class="fa fa-linkedin"></i></a>
+  <a href="https://www.github.com/shubhamgoswami"><i class="fa fa-github"></i></a>
 </footer>
 
 </body>
