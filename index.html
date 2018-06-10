@@ -1,155 +1,196 @@
 <!DOCTYPE html>
-<html>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-
+<html lang="en">
 <head>
-   
-   <style>
-
-table {
-     width:100%
-}
-table, th, td {
-    border: 2px solid #cecece;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-.selected {
-       background-color: #f36f48;
-       font-weight: bold;
-       color: white;
-}
-tr:nth-child(even){background-color: #f2f2f2}
-
-
-footer {
-  padding: 20px 0;
-  background:#000;
-}
-   </style>
-
+  <link rel="icon" href="images/logo.jpg"/>
+  <title>Shubham Goswami</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/css.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#myPage">Shubham Goswami</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#myPage">HOME</a></li>
+          <li><a onClick="alert('Uploading Soon!')" href="#" >RESUME</a></li>
+          <li><a href="#project">PROJECT</a></li>
+          <li><a href="#education">EDUCATION</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">SOCIAL
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://github.com/shubhamgoswami" target="_blank">Github</a></li>
+                <li><a href="https://linkedin.com/in/goswamishubham" target="_blank">Linkedin</a></li> 
+                <li><a href="https://facebook.com/sgshubham98" target="_blank">Facebook</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<!-- Navigation Bar -->
-<nav class="w3-bar w3-black">
-  <a href="#home" class="w3-button w3-bar-item">Home</a>
-  <a href="#My Coding Schedule" class="w3-button w3-bar-item">My Coding Schedule</a>
-  <a href="https://www.linkedin.com/in/goswamishubham" class="w3-button w3-bar-item">Resume</a>
-  <a href="#conatct" class="w3-button w3-bar-item">Conatct</a>
-</nav>
-
-<!-- Photo ID -->
-<div class="w3-container w3-center w3-large">
-  <h2></h2>
-  <img src="https://instagram.fagr1-1.fna.fbcdn.net/t51.2885-19/s150x150/19984760_871077233048037_4159616955059273728_a.jpg" class="w3-circle" alt="Photo ID" >
-</div>
-<!-- Photo ID end -->
-
-<section class="w3-container w3-center" style="max-width:2000px">
-   <h2></h2>
-  <h2 class="w3-wide">About Me</h2>
-</section>
-
-<section class="w3-container w3-content w3-center" style="max-width:600px">
-<p class="w3-justify">
-My name is Shubham Goswami. I am a second year undergraduate student at
-     <a href="http://www.kiet.edu/" title="_blank">Krishna Institute Of Engineering and Technology.</a> 
-     I am pursuing a bachelors degree in Computer Science and Engineering (B. Tech).
-</section>
-
-<section class="w3-container w3-center" style="max-width:2100px">
-  <h2></h2>
-  <h2 class="w3-wide">My Coding Schedule</h2>
-</section>
-
-<div class="w3-center" style="overflow-x:auto">
-  <table>
-    <tr>
-      <th>Day</th>
-      <th>Mon</th>
-      <th>Tue</th>
-      <th>Wed</th>
-      <th>Thu</th>
-      <th>Fri</th>
-      <th>Sat</th>
-    </tr>
-    <tr>
-      <td>8-8:30</td>
-      <td class="selected">Learn</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>9-10</td>
-      <td></td>
-      <td class="selected">Practice</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>   
-</tr>
-    <tr>
-      <td>1-1:30</td>
-      <td></td>
-      <td></td>
-      <td class="selected">Play</td>
-      <td></td>
-      <td></td>
-      <td></td>    
-</tr>
-<tr>
-      <td>3:45-5</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td class="selected">Code</td>
-      <td></td>
-      <td></td>    
-</tr>
-<tr>
-      <td>6-6:15</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td class="selected">Discuss</td>
-      <td></td>
-    </tr>
-<tr>
-      <td>6-6:15</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td class="selected"> Sleep</td>    
-</tr>
-  </table>
+<div class="container text-center">
+  <h2>Hi!</h2>
+  <p>Hey! My name is<em> Shubham Goswami</em>. I am undergraduate student at 
+  <a href="https://kiet.edu" data-toggle="tooltip" title="Visit kiet.edu" target="_blank">Krishna Institute Of Engineering and Technology</a>.</p>
+  <p>I am pursuing a bachelors degree in Computer Science and Engineering (B. Tech).</p>
+  <br>
+  <a href="mailto:sgshubham98@gmail.com" class="btn btn-primary my-2">E-mail</a>
+  <a href="#" onClick="alert('Uploading Soon!')" class="btn btn-secondary my-2">Resume</a>
+  <br><br><br>
+  <a href="#demo3" data-toggle="collapse">
+    <img src="images/image.jpg" class="img-circle person center" alt="image" width="255" height="255">
+  </a>
+  <div id="demo3" class="collapse center">
+    <p class="text-center"></p>
+    <p class="text-center">Loves Photography</p>
+    <p class="text-center"></p>
+  </div>
 </div>
 
+<!-- Projects Section -->
+<div id="project" class="bg-1">
+  <div class="container">
+    <h2 class="text-center">PROJECTS</h2> 
+    <br>
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/project1.jpg" alt="personalblog" width="400" height="300">
+          <p><strong>Persnoal Blog</strong></p>
+          <p>Created Personal Blog using Django Framework</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Details</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/project2.jpg" alt="wordcount" width="400" height="300">
+          <p><strong>Word Count</strong></p>
+          <p>Created word counter using Django Framework</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Details</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="" alt="img" width="400" height="300">
+          <p><strong>coming soon!!</strong></p>
+          <p></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="fa fa-outdent"></span> Description</h4>
+        </div>
+        <div class="modal-footer"><p align="center"><button type="submit" class="btn btn-danger btn-default" data-dismiss="modal">
+            <span class="fa fa-undo"></span> Return
+          </button></p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Education Section -->
+<div id="education" class="container">
+  <h2 class="text-center">Education</h2>
+  <p class="text-center">Uploading soon!!</p>
+</div>
+
+
+<!-- Skills -->
+
+<div id="skills" class="bg-1">
+  <div class="container">
+    <h2 class="text-center">SKILLS</h2>
+    <p class="text-center">Uploading soon!!</p>
+  </div>
+  
+</div>
+
+<!-- Contact Section -->
+<div id="contact" class="container">
+  <h2 class="text-center">CONTACT</h2>
+  <br>
+  <p class="text-center"><span class="glyphicon glyphicon-phone"></span>Phone: +91 8868003003</p>
+  <p class="text-center"><span class="glyphicon glyphicon-envelope text-center"></span>Email: sgshubham98@gmail.com</p>
+</div>
 
 <!-- Footer -->
-    <footer>
-      <div class="container w3-padding-20 w3-black w3-xlarge w3-center">
-  <a href="https://www.facebook.com/sgshubham98"><i class="fa fa-facebook-official"></i></a>
-  <a href="https://www.instagram.com/shubhamgoswami_"><i class="fa fa-instagram"></i></a>
-  <a href="https://www.twitter.com/shubhamgoswami_"><i class="fa fa-twitter"></i></a>
-  <a href="https://www.linkedin.com/in/goswamishubham"><i class="fa fa-linkedin"></i></a>
-  <a href="https://www.github.com/shubhamgoswami"><i class="fa fa-github"></i></a>      
-</div>
-    </footer>
-<!-- /Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <br>
+  <br>
+  <a href="https://www.facebook.com/sgshubham98" title="Visit Facebook" target="_blank"><i class="fa fa-facebook-official" style="font-size:36px"></i></a>
+  <a href="https://www.instagram.com/shubhamgoswami_" title="Visit Instagram" target="_blank"><i class="fa fa-instagram" style="font-size:36px"></i></a>
+  <a href="https://www.twitter.com/shubhamgoswami_" title="Visit Twitter" target="_blank"><i class="fa fa-twitter" style="font-size:36px"></i></a>
+  <a href="https://www.linkedin.com/in/goswamishubham" title="Visit Linkedin" target="_blank"><i class="fa fa-linkedin" style="font-size:36px"></i></a>
+  <a href="https://www.github.com/shubhamgoswami" title="Visit Github" target="_blank"><i class="fa fa-github" style="font-size:36px"></i></a>
+  <br>
+  <br>
+  <p style="font-size:26px">© Shubham Goswami <script type="text/JavaScript">document.write(new Date().getFullYear());</script></p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
 
 </body>
 </html>
