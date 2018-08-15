@@ -4,7 +4,7 @@
   }
   h3, h4 {
       margin: 10px 0 30px 0;
-      letter-spacing: 10px;      
+      letter-spacing: 6px;      
       font-size: 20px;
       color: #111;
   }
@@ -61,15 +61,6 @@
       background-color: #fff;
       color: #000;
   }
-  .modal-header, h4, .close {
-      background-color: #333;
-      color: #fff !important;
-      text-align: center;
-      font-size: 30px;
-  }
-  .modal-header, .modal-body {
-      padding: 40px 50px;
-  }
   .nav-tabs li a {
       color: #777;
   }
@@ -79,7 +70,7 @@
       background-color: #2d2d30;
       border: 0;
       font-size: 11px !important;
-      letter-spacing: 4px;
+      letter-spacing: 2px;
       opacity: 0.9;
   }
   .navbar li a, .navbar .navbar-brand { 
@@ -122,4 +113,20 @@
   }
   textarea {
       resize: none;
+  }
+
+  .btn-primary{
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+  hr{
+    border-width: 3px;
+    border-color: #AFEEEE;
+  }
+
+  .description{
+    font-family: "Playfair Display";
+    font-size: 20px;
+    letter-spacing: 2px;
   }
