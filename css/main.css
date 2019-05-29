@@ -1,0 +1,37 @@
+body {
+	padding-top: 2%;
+}
+
+.container {
+	text-align: center;
+}
+
+.nav-link {
+	color: black;
+}
+
+.container h1 {
+	font-family: 'Montez', cursive;
+}
+
+.icon{
+	color: black;
+	letter-spacing: 20px;
+}
+
+.content {
+	font-family: 'Montserrat', sans-serif;
+	padding-top: 3%;
+	max-width: 50%;
+	width: 80%;
+	margin-left: 25%;
+}
+
+.content h3{
+	text-align: left;
+	font-weight: 800;
+}
+
+.content p{
+	text-align: left;
+}
